@@ -1,13 +1,13 @@
 import { withStyles } from "@material-ui/core/styles";
 import { Typography, Button } from "@material-ui/core";
-import ARROW from "../assets/shared/desktop/arrow.svg";
+import ARROW from "../../assets/shared/desktop/arrow.svg";
 import { NavLink } from "react-router-dom";
-import LOGO from "../assets/shared/desktop/logo.svg";
-import FACEBOOK from "../assets/shared/desktop/facebook.svg";
-import YOUTUBE from "../assets/shared/desktop/youtube.svg";
-import TWITTER from "../assets/shared/desktop/twitter.svg";
-import PINTEREST from "../assets/shared/desktop/pinterest.svg";
-import INSTAGRAM from "../assets/shared/desktop/instagram.svg";
+import LOGO from "../../assets/shared/desktop/logo.svg";
+import FACEBOOK from "../../assets/shared/desktop/facebook.svg";
+import YOUTUBE from "../../assets/shared/desktop/youtube.svg";
+import TWITTER from "../../assets/shared/desktop/twitter.svg";
+import PINTEREST from "../../assets/shared/desktop/pinterest.svg";
+import INSTAGRAM from "../../assets/shared/desktop/instagram.svg";
 
 const styles = (theme) => ({
     root: {

@@ -1,5 +1,5 @@
 import { Link, withStyles, Button } from "@material-ui/core";
-import LOGO from "../assets/shared/desktop/logo.svg";
+import LOGO from "../../assets/shared/desktop/logo.svg";
 
 const styles = (theme) => ({
   root: {

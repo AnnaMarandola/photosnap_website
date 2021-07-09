@@ -1,6 +1,6 @@
-import RESPONSIVE from "../assets/features/desktop/responsive.svg";
-import NOLIMIT from "../assets/features/desktop/no-limit.svg";
-import EMBED from "../assets/features/desktop/embed.svg";
+import RESPONSIVE from "../../../assets/features/desktop/responsive.svg";
+import NOLIMIT from "../../../assets/features/desktop/no-limit.svg";
+import EMBED from "../../../assets/features/desktop/embed.svg";
 
 export const features = [
     {

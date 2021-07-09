@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import HomePage from './components/HomePage';
-import StoriesPage from './components/StoriesPage';
-import PricingPage from './components/PricingPage';
-import FeaturesPage from './components/FeaturesPage';
+import HomePage from './components/homePage/HomePage';
+import StoriesPage from './components/storiesPage/StoriesPage';
+import PricingPage from './components/pricingPage/PricingPage';
+import FeaturesPage from './components/featuresPage/FeaturesPage';
 
 function App() {
   return (

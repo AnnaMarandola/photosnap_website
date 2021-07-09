@@ -1,9 +1,9 @@
 import { withStyles } from "@material-ui/core/styles";
-import Navbar from "./Navbar";
+import Navbar from "../utils/Navbar";
 import PictureCard from "./PictureCard";
 import HomeStories from "./HomeStories";
-import Features from "./Features"; 
-import Footer from "./Footer";
+import Features from "../utils/Features"; 
+import Footer from "../utils/Footer";
 
 const styles = (theme) => ({});
 

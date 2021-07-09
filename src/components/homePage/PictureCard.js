@@ -1,7 +1,7 @@
 import { withStyles } from "@material-ui/core/styles";
 import { Typography, Button } from "@material-ui/core";
-import ARROW from "../assets/shared/desktop/arrow.svg";
-import { cards } from "./cardsData";
+import ARROW from "../../assets/shared/desktop/arrow.svg";
+import { cards } from "../utils/data/cardsData";
 
 const styles = (theme) => ({
   root: {

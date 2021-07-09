@@ -1,8 +1,8 @@
-import CREATEANDSHAREd from "../assets/home/desktop/create-and-share.jpg";
-import CREATEANDSHAREt from "../assets/home/tablet/create-and-share.jpg";
-import CREATEANDSHAREm from "../assets/home/mobile/create-and-share.jpg";
-import BEAUTIFULSTORIES from "../assets/home/desktop/beautiful-stories.jpg";
-import DESIGNED from "../assets/home/desktop/designed-for-everyone.jpg";
+import CREATEANDSHAREd from "../../../assets/home/desktop/create-and-share.jpg";
+import CREATEANDSHAREt from "../../../assets/home/tablet/create-and-share.jpg";
+import CREATEANDSHAREm from "../../../assets/home/mobile/create-and-share.jpg";
+import BEAUTIFULSTORIES from "../../../assets/home/desktop/beautiful-stories.jpg";
+import DESIGNED from "../../../assets/home/desktop/designed-for-everyone.jpg";
 
 
 export const cards = [

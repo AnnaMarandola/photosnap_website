@@ -1,7 +1,7 @@
 import { withStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 
-import { features } from "./featuresData";
+import { features } from "./data/featuresData";
 
 const styles = (theme) => ({
     root: {
