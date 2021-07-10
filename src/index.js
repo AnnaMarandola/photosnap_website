@@ -11,18 +11,19 @@ let theme = createTheme({
   typography: {
     useNextVariants: true,
     h1: {
-      // color: "#BF4D0B",
-      fontSize: "20rem",
-      fontWeight: 600,
+      // color: "white",
+      fontSize: "3rem",
+      fontWeight: 700,
       fontFamily: "DM Sans",
       "@media (max-width:600px)": {
-        fontSize: "3rem",
+        fontSize: "2rem",
       },
     },
     h2: {
+      // color: "white",
       fontFamily: "DM Sans",
       fontSize: "3rem",
-      fontWeight: 200,
+      fontWeight: 800,
       color: "#231140",
       "@media (max-width:600px)": {
         fontSize: "2rem",
@@ -30,9 +31,9 @@ let theme = createTheme({
     },
     h3: {
       fontFamily: "DM Sans",
-      fontSize: "2.5rem",
-      fontWeight: 400,
-      color: "#031627",
+      fontSize: "1.7rem",
+      fontWeight: 700,
+      color: "#DFDFDF",
       "@media (max-width:600px)": {
         fontSize: "2rem",
       },
@@ -68,6 +69,7 @@ let theme = createTheme({
     body1: {
       fontSize: "1.3rem",
       fontFamily: "DM Sans",
+      color: "#DFDFDF",
       "@media (max-width:600px)": {
         fontSize: "1rem",
       },
@@ -96,7 +98,6 @@ let theme = createTheme({
       main: "#000",
       lightGrey: "#DFDFDF",
       pureWhite: "#FFFFF",
-      // gradient: 'linear-gradient(to right bottom, #FFC593, #BC7198, #5A77FF)',
     },
     secondary: {
       main: "#f51735",
@@ -105,7 +106,7 @@ let theme = createTheme({
       default: "#FFFFF",
     },
     text: {
-      primary: "#001",
+      primary: "#DFDFDF",
     },
   },
 });

@@ -18,6 +18,12 @@ const styles = (theme) => ({
       width: "40%",
     },
   },
+  logo: {
+    [theme.breakpoints.up("md")]: {
+      width: "120%",
+
+    }
+  },
   navLink: {
     textTransform: "uppercase",
     "&:hover": {
@@ -27,6 +33,19 @@ const styles = (theme) => ({
   },
   inviteButton: {
     textTransform: "uppercase",
+    backgroundColor: theme.palette.primary.main,
+    color: "white",
+    fontWeight: 600,
+    padding: ".35rem 1rem",
+    margin: "0 1rem",
+    "&:hover": {
+      backgroundColor: theme.palette.primary.lightGrey,
+      color: theme.palette.primary.main,
+     },
+    [theme.breakpoints.up("md")]: {
+      padding: ".7rem 2rem",
+
+    }
   }
 });
 
@@ -37,14 +56,14 @@ function Navbar({ classes }) {
         <img src={LOGO} alt="logo" className={classes.logo} />
       </div>
       <div className={classes.navContainer}>
+        <Link variant="h6" className={classes.navLink} href="/stories">
+          Stories
+        </Link>
         <Link variant="h6" className={classes.navLink} href="/features">
           Features
         </Link>
         <Link variant="h6" className={classes.navLink} href="/pricing">
           Pricing
-        </Link>
-        <Link variant="h6" className={classes.navLink} href="/stories">
-          Stories
         </Link>
       </div>
       <div className={classes.inviteContainer}>

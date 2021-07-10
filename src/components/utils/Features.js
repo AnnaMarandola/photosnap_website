@@ -6,6 +6,9 @@ import { features } from "./data/featuresData";
 const styles = (theme) => ({
     root: {
         display: "flex",
+        flexDirection: "column",
+        marginTop: "12rem",
+        marginBottom: "12rem",
     }
 });
 
