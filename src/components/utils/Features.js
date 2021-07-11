@@ -7,8 +7,43 @@ const styles = (theme) => ({
     root: {
         display: "flex",
         flexDirection: "column",
-        marginTop: "12rem",
-        marginBottom: "12rem",
+        marginTop: "10rem",
+        marginBottom: "5rem",
+        alignItems: "center",
+        [theme.breakpoints.up("md")]: {
+          width: "80%",
+          marginLeft: "10%",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          flexWrap: "wrap",
+        }
+    },
+    featureCard: {
+      margin: "2rem",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginBottom: "8rem",
+      [theme.breakpoints.up("md")]: {
+        width: "28%",
+      }
+    },
+    featureLogo: {
+      width: "15%",
+      marginBottom: "4rem",
+      "&:nth-child(2)": {
+        width: "25%",
+
+      }
+    },
+    textContainer: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      textAlign: "center",
+    },
+    title: {
+      marginBottom: "2rem",
     }
 });
 
@@ -25,8 +60,8 @@ const Features = ({ classes }) => {
             className={classes.featureLogo}
           />
           <div className={classes.textContainer}>
-            <Typography variant="h4">{feature.title}</Typography>
-            <Typography variant="body2">{feature.text}</Typography>
+            <Typography variant="body2" className={classes.title}>{feature.title}</Typography>
+            <Typography variant="body1">{feature.text}</Typography>
           </div>
         </div>
       ))}

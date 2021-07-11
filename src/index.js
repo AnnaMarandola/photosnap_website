@@ -69,7 +69,6 @@ let theme = createTheme({
     body1: {
       fontSize: "1.3rem",
       fontFamily: "DM Sans",
-      color: "#DFDFDF",
       "@media (max-width:600px)": {
         fontSize: "1rem",
       },
@@ -106,7 +105,7 @@ let theme = createTheme({
       default: "#FFFFF",
     },
     text: {
-      primary: "#DFDFDF",
+      primary: "#000",
     },
   },
 });

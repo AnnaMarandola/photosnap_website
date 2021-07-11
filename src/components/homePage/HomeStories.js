@@ -29,21 +29,18 @@ const styles = (theme) => ({
     width: "100%",
     "&:hover": {
       animation: "$slideUp 1s",
-
-      borderBottom: 'solid 1rem',
+      borderBottom: 'solid 0.7rem',
       borderImageSlice: 1,
       borderImageSource: "linear-gradient(to right top, #FFC593, #BC7198, #5A77FF)",
     },
+
+    
   },
   textContainer: {
     position: "relative",
-    bottom: "12rem",
+    bottom: "14rem",
     margin: "2rem",
-    "&:hover": {
-      borderBottom: 'solid 1rem',
-      borderImageSlice: 1,
-      borderImageSource: "linear-gradient(to right top, #FFC593, #BC7198, #5A77FF)",
-    },
+    color: theme.palette.primary.lightGrey,
   },
   separator: {
     color: theme.palette.primary.lightGrey,
@@ -54,9 +51,13 @@ const styles = (theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  buttonText: {
+    color: "white",
+
+  },
   "@keyframes slideUp": {
     from: { bottom: "0rem" },
-    to: { bottom: "1rem" },
+    to: { bottom: "3rem" },
   },
 });
 
