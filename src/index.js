@@ -96,7 +96,7 @@ let theme = createTheme({
     primary: {
       main: "#000",
       lightGrey: "#DFDFDF",
-      pureWhite: "#FFFFF",
+      pureWhite: "#FFF",
     },
     secondary: {
       main: "#f51735",
