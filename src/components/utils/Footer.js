@@ -3,11 +3,7 @@ import { Typography, Button } from "@material-ui/core";
 import ARROW from "../../assets/shared/desktop/arrow2.svg";
 import { NavLink } from "react-router-dom";
 import LOGO from "../../assets/shared/desktop/logo2.svg";
-import FACEBOOK from "../../assets/shared/desktop/facebook.svg";
-import YOUTUBE from "../../assets/shared/desktop/youtube.svg";
-import TWITTER from "../../assets/shared/desktop/twitter.svg";
-import PINTEREST from "../../assets/shared/desktop/pinterest.svg";
-import INSTAGRAM from "../../assets/shared/desktop/instagram.svg";
+import ContactIcons from "./ContactIcons";
 
 const styles = (theme) => ({
   root: {
@@ -67,13 +63,7 @@ const Footer = ({ classes }) => {
     <div className={classes.root}>
       <div className={classes.contactContainer}>
         <img src={LOGO} alt="photosnap" className={classes.logo} />
-        <div className={classes.mediaIcons}>
-          <img src={FACEBOOK} alt="facebook" />
-          <img src={YOUTUBE} alt="youtube" />
-          <img src={TWITTER} alt="twitter" />
-          <img src={PINTEREST} alt="pinterest" />
-          <img src={INSTAGRAM} alt="instagram" />
-        </div>
+        <ContactIcons />
       </div>
 
       <div className={classes.navContainer}>
