@@ -7,6 +7,8 @@ import ContactIcons from "./ContactIcons";
 
 const styles = (theme) => ({
   root: {
+    position: "relative",
+    bottom: 0,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

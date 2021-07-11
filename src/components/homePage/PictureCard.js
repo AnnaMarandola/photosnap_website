@@ -1,5 +1,5 @@
 import { withStyles } from "@material-ui/core/styles";
-import { Typography, Button, Link } from "@material-ui/core";
+import { Typography, Button } from "@material-ui/core";
 import ARROW from "../../assets/shared/desktop/arrow.svg";
 import ARROW2 from "../../assets/shared/desktop/arrow2.svg";
 import { cards } from "../utils/data/cardsData";

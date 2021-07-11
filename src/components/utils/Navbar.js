@@ -21,8 +21,7 @@ const styles = (theme) => ({
   logo: {
     [theme.breakpoints.up("md")]: {
       width: "120%",
-
-    }
+    },
   },
   navLink: {
     textTransform: "uppercase",
@@ -41,19 +40,20 @@ const styles = (theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.primary.lightGrey,
       color: theme.palette.primary.main,
-     },
+    },
     [theme.breakpoints.up("md")]: {
       padding: ".7rem 2rem",
-
-    }
-  }
+    },
+  },
 });
 
 function Navbar({ classes }) {
   return (
     <div className={classes.root}>
       <div className={classes.LogoContainer}>
-        <img src={LOGO} alt="logo" className={classes.logo} />
+        <Link href="/">
+          <img src={LOGO} alt="logo" className={classes.logo} />
+        </Link>
       </div>
       <div className={classes.navContainer}>
         <Link variant="h6" className={classes.navLink} href="/stories">
