@@ -86,27 +86,23 @@ const styles = (theme) => ({
   },
 });
 
-const PictureCard = ({ classes, cardId }) => {
+const Herobanner = ({ classes, cardId }) => {
   const card = cards.find((card) => card.id === cardId);
   return (
-    <div
-      className={classes.root}
-      style={
-        card.id === "create-and-share"
-          ? { backgroundColor: "black" }
-          : { backgroundColor: "white" }
-      }
-    >
+    <div className={classes.root} style={{ backgroundColor: card.color }}>
+
       <div className={classes.textContainer}>
-        {card.id === "create-and-share" && (
+
+        {card.color === "black" ? (
           <div className={classes.gradientLine} />
-        )}
+        ) : null}
+
         <div className={classes.texts}>
           <Typography
             variant="h1"
             className={classes.title}
             style={
-              card.id === "create-and-share"
+              card.color === "black"
                 ? { color: "white" }
                 : { color: "black" }
             }
@@ -117,30 +113,38 @@ const PictureCard = ({ classes, cardId }) => {
             variant="body1"
             className={classes.subtitle}
             style={
-              card.id === "create-and-share"
-                ? { color: "#DFDFDF" }
+              card.color === "black"
+                ? { color: "white" }
                 : { color: "black" }
             }
           >
             {card.subtitle}
           </Typography>
-          <Button
-            style={
-              card.id === "create-and-share"
+          {card.buttonText && (
+            <Button
+              style={
+                card.color === "black"
                 ? { color: "white" }
                 : { color: "black" }
-            }
-            className={classes.inviteButton}
-          >
-            {card.buttonText}{" "}
-            <img
-              src={card.id === "create-and-share" ? ARROW2 : ARROW}
-              alt="arrow"
-              className={classes.arrow}
-            />
-          </Button>
+              }
+              className={classes.inviteButton}
+            >
+              {card.buttonText}{" "}
+              <img
+                src={
+                  card.color === "black"
+                    ? ARROW2
+                    : ARROW
+                }
+                alt="arrow"
+                className={classes.arrow}
+              />
+            </Button>
+          )}
         </div>
+        
       </div>
+
       <div className={classes.imgContainer}>
         <img
           src={card.picture}
@@ -155,4 +159,4 @@ const PictureCard = ({ classes, cardId }) => {
   );
 };
 
-export default withStyles(styles)(PictureCard);
+export default withStyles(styles)(Herobanner);

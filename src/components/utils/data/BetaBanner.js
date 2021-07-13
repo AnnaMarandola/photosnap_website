@@ -24,7 +24,8 @@ const styles = (theme) => ({
       flexDirection: "row",
       justifyContent: "space-between",
       padding: "8rem",
-      width: "100%",
+      width: "95%",
+      marginLeft: "2.5%",
     },
   },
   title: {

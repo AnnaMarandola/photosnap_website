@@ -1,15 +1,18 @@
 import { withStyles } from "@material-ui/core/styles";
+import Herobanner from "../homePage/HeroBanner";
 import BetaBanner from "../utils/data/BetaBanner";
+import Features from "../utils/Features";
 import Footer from "../utils/Footer";
 import Navbar from "../utils/Navbar";
 
 const styles = (theme) => ({});
 
-const FeaturesPage = ({ classes }) => {
+const FeaturesPage = ({ classes, match }) => {
   return (
     <div className={classes.root}>
       <Navbar />
-      <h1>FeaturesPage</h1>
+      <Herobanner cardId={"features"}/>
+      <Features />
       <BetaBanner />
       <Footer />
     </div>
