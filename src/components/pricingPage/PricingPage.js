@@ -3,6 +3,7 @@ import Navbar from "../utils/Navbar";
 import Footer from "../utils/Footer";
 import BetaBanner from "../utils/data/BetaBanner";
 import Herobanner from "../homePage/HeroBanner";
+import SubscriptionsTable from "./SubscriptionsTable";
 
 const styles = (theme) => ({});
 
@@ -11,6 +12,7 @@ const PricingPage = ({ classes }) => {
     <div className={classes.root}>
       <Navbar />
       <Herobanner cardId={"pricing"} />
+      <SubscriptionsTable />
       <BetaBanner />
       <Footer />
     </div>

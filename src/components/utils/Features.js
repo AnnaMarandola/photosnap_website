@@ -7,7 +7,7 @@ const styles = (theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    marginTop: "10rem",
+    marginTop: "5rem",
     marginBottom: "5rem",
     alignItems: "center",
     [theme.breakpoints.up("md")]: {
@@ -16,6 +16,7 @@ const styles = (theme) => ({
       flexDirection: "row",
       justifyContent: "space-evenly",
       flexWrap: "wrap",
+      marginTop: "10rem",
     },
   },
   featureCard: {
@@ -37,7 +38,7 @@ const styles = (theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: "10%",
     },
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       width: "15%",
     },
   },
