@@ -1,7 +1,7 @@
 import { Typography, Button } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import BETA from "../../../assets/shared/desktop/bg-beta.jpg";
-import ARROW2 from "../../../assets/shared/desktop/arrow2.svg";
+import BETA from "../../assets/shared/desktop/bg-beta.jpg";
+import ARROW2 from "../../assets/shared/desktop/arrow2.svg";
 
 const styles = (theme) => ({
   root: {
@@ -10,7 +10,6 @@ const styles = (theme) => ({
     backgroundPosition: "right ",
     backgroundSize: "cover",
     width: "100%",
-    // height: "25rem",
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.up("md")]: {},

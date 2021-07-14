@@ -1,6 +1,6 @@
 import { withStyles } from "@material-ui/core/styles";
 import Herobanner from "../homePage/HeroBanner";
-import BetaBanner from "../utils/data/BetaBanner";
+import BetaBanner from "../utils/BetaBanner";
 import Features from "../utils/Features";
 import Footer from "../utils/Footer";
 import Navbar from "../utils/Navbar";

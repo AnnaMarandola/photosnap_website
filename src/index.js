@@ -33,7 +33,7 @@ let theme = createTheme({
       fontFamily: "DM Sans",
       fontSize: "1.7rem",
       fontWeight: 700,
-      color: "#DFDFDF",
+      // color: "#DFDFDF",
       "@media (max-width:600px)": {
         fontSize: "2rem",
       },
