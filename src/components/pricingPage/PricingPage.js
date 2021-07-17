@@ -5,6 +5,7 @@ import BetaBanner from "../utils/BetaBanner";
 import Herobanner from "../homePage/HeroBanner";
 import SubscriptionsTable from "./SubscriptionsTable";
 import Plans from "./Plans";
+import MobileNav from "../utils/MobileNav";
 
 const styles = (theme) => ({});
 
@@ -13,10 +14,11 @@ const PricingPage = ({ classes }) => {
     <div className={classes.root}>
       <Navbar />
       <Herobanner cardId={"pricing"} />
-      <Plans/>
+      <Plans />
       <SubscriptionsTable />
       <BetaBanner />
       <Footer />
+      <MobileNav />
     </div>
   );
 };
