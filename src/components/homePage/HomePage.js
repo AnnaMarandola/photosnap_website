@@ -4,7 +4,6 @@ import HeroBanner from "./HeroBanner";
 import HomeStories from "./HomeStories";
 import Features from "../utils/Features"; 
 import Footer from "../utils/Footer";
-import MobileNav from "../utils/MobileNav";
 
 const styles = (theme) => ({});
 
@@ -18,7 +17,6 @@ const HomePage = ({ classes }) => {
       <HomeStories />
       <Features />
       <Footer />
-      <MobileNav />
     </div>
   );
 };

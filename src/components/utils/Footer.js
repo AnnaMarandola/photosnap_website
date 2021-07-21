@@ -11,7 +11,6 @@ const styles = (theme) => ({
     flexDirection: "column",
     alignItems: "center",
     width: "100%",
-    paddingBottom: "4rem",
     backgroundColor: theme.palette.primary.main,
     [theme.breakpoints.up("md")]: {
       flexDirection: "row",

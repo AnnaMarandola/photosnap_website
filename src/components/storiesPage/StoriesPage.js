@@ -1,6 +1,5 @@
 import { withStyles } from "@material-ui/core/styles";
 import Footer from "../utils/Footer";
-import MobileNav from "../utils/MobileNav";
 import Navbar from "../utils/Navbar";
 import Stories from "./Stories";
 import StoriesBanner from "./StoriesBanner";
@@ -14,7 +13,6 @@ const StoriesPage = ({ classes }) => {
       <StoriesBanner />
       <Stories />
       <Footer />
-      <MobileNav />
     </div>
   );
 };

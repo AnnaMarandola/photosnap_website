@@ -3,7 +3,6 @@ import Herobanner from "../homePage/HeroBanner";
 import BetaBanner from "../utils/BetaBanner";
 import Features from "../utils/Features";
 import Footer from "../utils/Footer";
-import MobileNav from "../utils/MobileNav";
 import Navbar from "../utils/Navbar";
 
 const styles = (theme) => ({});
@@ -16,7 +15,6 @@ const FeaturesPage = ({ classes, match }) => {
       <Features />
       <BetaBanner />
       <Footer />
-      <MobileNav />
     </div>
   );
 };

@@ -7,7 +7,8 @@ import {
   Menu,
   MenuItem,
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+import CROSS from "../../assets/shared/mobile/close.svg";
+import MENU from "../../assets/shared/mobile/menu.svg";
 
 const styles = (theme) => ({
   root: {
@@ -16,13 +17,10 @@ const styles = (theme) => ({
   separator: {
     width: "80%",
     border: "1px solid #dfdfdf",
-    margin: "1rem 10%",
-    // borderImageSlice: 1,
-    // borderImageSource:
-    //   "linear-gradient(to right top, #FFC593, #BC7198, #5A77FF)",
+    margin: "0.5rem 10%",
   },
   menuIcon: {
-    color: "white",
+    color: "black",
     fontSize: 30,
     marginLeft: "3rem",
     position: "absolute",
@@ -33,9 +31,9 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.primary.main,
     color: "white",
     fontWeight: 600,
-    padding: ".35rem 1rem",
+    padding: ".8rem 1.5rem",
     width: "80%",
-    margin: "1rem 0", 
+    margin: "1rem 0",
     marginLeft: "10%",
     "&:hover": {
       backgroundColor: theme.palette.primary.lightGrey,
@@ -49,13 +47,14 @@ const styles = (theme) => ({
 
 const StyledMenu = withStyles({
   paper: {
-    border: "1px solid #black",
-    borderRadius: "1rem",
     backgroundColor: "white",
     paddingBottom: "1rem",
-    width: "100vh",
+    marginTop: "2rem",
+    width: "100%",
   },
-  list: {},
+  list: {
+    width: "100%"
+  },
 })((props, classes) => (
   <Menu
     elevation={20}
@@ -103,9 +102,12 @@ function MobileMenu({ classes }) {
         onClick={handleClick}
         className={classes.root}
       >
-        <MenuIcon
-          className={classes.menuIcon}
-        />
+        {anchorEl === null ? (
+          <img src={MENU} alt="close cross" className={classes.menuIcon} />
+
+        ) : (
+          <img src={CROSS} alt="close cross" className={classes.menuIcon} />
+        )}
       </Button>
       <StyledMenu
         id="menu"

@@ -3,8 +3,6 @@ import { Typography, Button } from "@material-ui/core";
 import ARROW from "../../assets/shared/desktop/arrow2.svg";
 import { stories } from "./allStoriesData";
 
-
-
 const styles = (theme) => ({
   root: {
     display: "flex",
@@ -14,6 +12,7 @@ const styles = (theme) => ({
   storyContainer: {
     position: "relative",
     width: "100%",
+    overflow: "hidden",
     marginBottom: "-14rem",
     "&:hover": {
       animation: "$slideUp 1s",
@@ -29,12 +28,11 @@ const styles = (theme) => ({
     width: "100%",
     "&:hover": {
       animation: "$slideUp 1s",
-      borderBottom: 'solid 0.7rem',
+      borderBottom: "solid 0.7rem",
       borderImageSlice: 1,
-      borderImageSource: "linear-gradient(to right top, #FFC593, #BC7198, #5A77FF)",
+      borderImageSource:
+        "linear-gradient(to right top, #FFC593, #BC7198, #5A77FF)",
     },
-
-    
   },
   textContainer: {
     position: "relative",
@@ -53,7 +51,6 @@ const styles = (theme) => ({
   },
   buttonText: {
     color: "white",
-
   },
   "@keyframes slideUp": {
     from: { bottom: "0rem" },
@@ -61,7 +58,7 @@ const styles = (theme) => ({
   },
 });
 
-const Stories = ({ classes,  }) => {
+const Stories = ({ classes }) => {
   return (
     <div className={classes.root}>
       {stories.map((story, index) => (

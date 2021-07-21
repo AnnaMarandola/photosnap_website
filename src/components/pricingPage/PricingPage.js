@@ -5,7 +5,6 @@ import BetaBanner from "../utils/BetaBanner";
 import Herobanner from "../homePage/HeroBanner";
 import SubscriptionsTable from "./SubscriptionsTable";
 import Plans from "./Plans";
-import MobileNav from "../utils/MobileNav";
 
 const styles = (theme) => ({});
 
@@ -18,7 +17,6 @@ const PricingPage = ({ classes }) => {
       <SubscriptionsTable />
       <BetaBanner />
       <Footer />
-      <MobileNav />
     </div>
   );
 };
