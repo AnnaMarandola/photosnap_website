@@ -1,4 +1,5 @@
-import { Link, withStyles, Button } from "@material-ui/core";
+import { withStyles, Button } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 import LOGO from "../../assets/shared/desktop/logo.svg";
 import MobileMenu from "./MobileMenu";
 
@@ -9,7 +10,6 @@ const styles = (theme) => ({
     height: "5rem",
     alignItems: "center",
     justifyContent: "space-around",
-    [theme.breakpoints.up("md")]: {},
   },
   navContainer: {
     display: "none",
@@ -26,6 +26,8 @@ const styles = (theme) => ({
   },
   navLink: {
     textTransform: "uppercase",
+    textDecoration: "none",
+    color: theme.palette.primary.main,
     "&:hover": {
       textDecoration: "none",
       color: theme.palette.primary.lightGrey,
@@ -58,20 +60,20 @@ function Navbar({ classes }) {
   return (
     <div className={classes.root}>
       <div className={classes.LogoContainer}>
-        <Link href="/">
+        <NavLink to="/">
           <img src={LOGO} alt="logo" className={classes.logo} />
-        </Link>
+        </NavLink>
       </div>
       <div className={classes.navContainer}>
-        <Link variant="h6" className={classes.navLink} href="/stories">
+        <NavLink variant="h6" className={classes.navLink} to="/stories">
           Stories
-        </Link>
-        <Link variant="h6" className={classes.navLink} href="/features">
+        </NavLink>
+        <NavLink variant="h6" className={classes.navLink} to="/features">
           Features
-        </Link>
-        <Link variant="h6" className={classes.navLink} href="/pricing">
+        </NavLink>
+        <NavLink variant="h6" className={classes.navLink} to="/pricing">
           Pricing
-        </Link>
+        </NavLink>
       </div>
       <div className={classes.inviteContainer}>
         <Button className={classes.inviteButton}>get an invite</Button>
