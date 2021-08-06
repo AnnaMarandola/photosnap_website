@@ -13,46 +13,42 @@ import CHECK from "../../assets/pricing/desktop/check.svg";
 
 const styles = (theme) => ({
   root: {
-    display: "none",
+    display: "flex",
+    flexDirection: "column",
+    margin: "6rem 0",
     [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      margin: "6rem 0",
+      display: "none",
     },
   },
   tableContainer: {
     textTransform: "uppercase",
     width: "90%",
-    [theme.breakpoints.up("md")]: {
-      width: "50%",
-      minWidth: "40rem",
-    },
+    margin: "auto",
   },
   title: {
     textTransform: "uppercase",
-    margin: "3rem 0",
-    [theme.breakpoints.up("md")]: {},
+    marginLeft: "2rem",
+    marginBottom: "1.5rem",
   },
   head: {
     fontWeight: 600,
-    borderBottom: "1.5px solid #000",
-    fontSize: "1rem",
-    textAlign: "center",
-    "&:nth-of-type(1)": {
-      textAlign: "left",
-    },
+    fontSize: "0.8rem",
+    textAlign: "left",
+    border: "none",
+    color: "grey",
   },
   features: {
-    height: "5rem",
     fontWeight: 600,
     fontSize: "1rem",
+    border: "none",
+    borderTop: "1px solid grey",
+  },
+  row: {
+    height: "2rem",
   },
   checkCell: {
-    textAlign: "center",
-    [theme.breakpoints.up("md")]: {
-      padding: "0 4rem",
-    },
+    textAlign: "left",
+    border: "none",
   },
 });
 
@@ -74,32 +70,29 @@ const rows = [
   createData("custom analytics", "", "", CHECK),
 ];
 
-const SubscriptionsTable = ({ classes }) => {
+const TableMobile = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <Typography variant="h1" className={classes.title}>
-        Compare
+      <Typography variant="h6" className={classes.title}>
+        The features
       </Typography>
-      <TableContainer className={classes.tableContainer}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead className={classes.header}>
-            <TableRow>
-              <TableCell className={classes.head}>The features</TableCell>
-              <TableCell className={classes.head}>Basic</TableCell>
-              <TableCell className={classes.head}>Pro</TableCell>
-              <TableCell className={classes.head}>Business</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
+      {rows.map((row) => (
+        <TableContainer className={classes.tableContainer}>
+          <Table className={classes.table} aria-label="simple table">
+            <TableHead className={classes.header}>
               <TableRow key={row.text}>
-                <TableCell
-                  className={classes.features}
-                  component="th"
-                  scope="row"
-                >
+                <TableCell className={classes.features} colspan={3}>
                   {row.text}
                 </TableCell>
+              </TableRow>
+              <TableRow className={classes.row}>
+                <TableCell className={classes.head}>Basic</TableCell>
+                <TableCell className={classes.head}>Pro</TableCell>
+                <TableCell className={classes.head}>Business</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow key={row.text}>
                 <TableCell className={classes.checkCell}>
                   {row.basic === CHECK && <img src={row.basic} alt="checked" />}
                 </TableCell>
@@ -112,12 +105,12 @@ const SubscriptionsTable = ({ classes }) => {
                   )}
                 </TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableBody>
+          </Table>
+        </TableContainer>
+      ))}
     </div>
   );
 };
 
-export default withStyles(styles)(SubscriptionsTable);
+export default withStyles(styles)(TableMobile);

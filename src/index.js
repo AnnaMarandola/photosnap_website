@@ -11,7 +11,6 @@ let theme = createTheme({
   typography: {
     useNextVariants: true,
     h1: {
-      // color: "white",
       fontSize: "3rem",
       fontWeight: 700,
       fontFamily: "DM Sans",
@@ -20,7 +19,6 @@ let theme = createTheme({
       },
     },
     h2: {
-      // color: "white",
       fontFamily: "DM Sans",
       fontSize: "3rem",
       fontWeight: 800,
@@ -33,7 +31,6 @@ let theme = createTheme({
       fontFamily: "DM Sans",
       fontSize: "1.7rem",
       fontWeight: 700,
-      // color: "#DFDFDF",
       "@media (max-width:600px)": {
         fontSize: "2rem",
       },
@@ -119,7 +116,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

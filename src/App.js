@@ -5,6 +5,7 @@ import StoriesPage from "./components/storiesPage/StoriesPage";
 import PricingPage from "./components/pricingPage/PricingPage";
 import FeaturesPage from "./components/featuresPage/FeaturesPage";
 
+
 function App() {
   return (
     <BrowserRouter>
